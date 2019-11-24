@@ -44,9 +44,8 @@ class AlgoGenerater:
             if is_validate:
                 self.algo.append(pure)
 
-if __name__ == "__main__":
 
-    from pprint import pprint
+if __name__ == "__main__":
 
     a = AlgoGenerater()
     a.generate()

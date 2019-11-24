@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from pprint import pprint
+
 class Scramble:
 
     # ULB -> URB -> URF -> ULFの順
@@ -276,10 +278,24 @@ class Scramble:
         self.move_d()
         self.move_d()
 
+    def clear(self):
+        self.u_face = Scramble.U_FACE
+        self.f_face = Scramble.F_FACE 
+        self.r_face = Scramble.R_FACE
+        self.b_face = Scramble.B_FACE
+        self.l_face = Scramble.L_FACE
+        self.d_face = Scramble.D_FACE
+
+    def face_print(self):
+        pprint(self.u_face)
+        pprint(self.f_face)
+        pprint(self.r_face)
+        pprint(self.b_face)
+        pprint(self.l_face)
+        pprint(self.d_face)
+
 
 if __name__ == "__main__":
-
-    from pprint import pprint
 
     s = Scramble()
     s.move_u()

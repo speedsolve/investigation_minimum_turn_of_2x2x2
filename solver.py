@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
+import pprint
 
 class Solver:
+
+    def __init__(self):
+        return
 
     def move(self, strings, scramble):
 
